@@ -208,6 +208,12 @@ public class UpgradedBlocks implements ContentList{
             itemCapacity = 30;
             liquidCapacity = 100;
             hasItems = true;
+            
+            envRequired |= Env.spores;
+            attribute = Attribute.spores;
+
+            legacyReadWarmup = true;
+            drawer = new DrawCultivator();
 
             consumes.power(8f);
             consumes.liquid(Liquids.water, 0.75f);
